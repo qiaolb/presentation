@@ -1,55 +1,209 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>EMCAScript 2015 Basic</title>
+    <title>EMCAScript 2015 Basic</title>
 
-		<link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/css/reveal.min.css">
-		<link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/css/theme/black.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/css/reveal.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/css/theme/black.min.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/lib/css/zenburn.min.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/lib/css/zenburn.min.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? '//cdn.bootcss.com/reveal.js/3.3.0/css/print/pdf.min.css' : '//cdn.bootcss.com/reveal.js/3.3.0/css/print/paper.min.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-				<script type="text/template">
-				    ## 引人的ECMAScript
-				    Joe
-				</script>
-				</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '//cdn.bootcss.com/reveal.js/3.3.0/css/print/pdf.min.css' : '//cdn.bootcss.com/reveal.js/3.3.0/css/print/paper.min.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-markdown>
+            <script type="text/template">
+                ## 引人的ECMAScript
+                Joe
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## ECMAScript简介
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## ECMAScript历史
+                2015年6月17日，ECMAScript 2015发布
+                2009年12月，ECMAScript 5
+                1999年12月，ECMAScript 3
+                1998年06月，ECMAScript 2
+                1997年06月，ECMAScript 1
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## ECMAScript简介
+                由Ecma国际通过ECMA-262标准化的脚本程序设计语言。
+                JavaScript是ECMAScript的实现和扩展
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## ECMAScript定义
+                语言语法 – 语法解析规则、关键字、语句、声明、运算符等。
+                类型 – 布尔型、数字、字符串、对象等。
+                原型和继承
+                内建对象和函数的标准库 – JSON、Math、数组方法、对象自省方法等。
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## ECMAScript不定义
+                HTML
+                CSS
+                类似DOM的Web API
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## ECMAScript & Javascript
+                ECMAScript：JavaScript，JScript，ActionScript
+                JavaScript：ECMAScript，DOM和BOM
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## ES2015新特性
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## 模板字符串
+                ```
+                console.log(`I'm a "String"`);
+                I'm a "String"
+                ```
+                ```
+                function authorize(user, action) {
+                    if (!user.hasPrivilege(action)) {
+                    throw new Error(
+                    `用户 ${user.name} 未被授权执行 ${action} 操作。`);
+                    }
+                }
+                ```
+                ```
+                $(“#wumai").html(`
+                西安雾霾
+                遛狗不见狗，狗绳提在手，
+                见绳不见手，狗叫我才走。
+                `);
+                ```
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## const，let
+                ```
+                const DELAY = 1000;
 
-		<script src="//cdn.bootcss.com/reveal.js/3.3.0/lib/js/head.min.js"></script>
-		<script src="//cdn.bootcss.com/reveal.js/3.3.0/js/reveal.min.js"></script>
+                let count = 0;
+                count = count + 1;
+                ```
+                放弃var
+                块级作用域。
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## for循环
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ##
+            </script>
+        </section>
+    </div>
+</div>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/markdown/marked.min.js' },
-					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/markdown/markdown.min.js' },
-					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/notes/notes.min.js', async: true },
-					{ src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<script src="//cdn.bootcss.com/reveal.js/3.3.0/lib/js/head.min.js"></script>
+<script src="//cdn.bootcss.com/reveal.js/3.3.0/js/reveal.min.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/markdown/marked.min.js'},
+            {src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/markdown/markdown.min.js'},
+            {src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/notes/notes.min.js', async: true},
+            {
+                src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/highlight/highlight.min.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
