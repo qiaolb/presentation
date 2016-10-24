@@ -22,12 +22,6 @@ Joe
 
 
 
-## ECMAScript简介
-* 由Ecma国际通过ECMA-262标准化的脚本程序设计语言。
-* JavaScript是ECMAScript的实现和扩展
-
-
-
 ## ECMAScript定义
 * 语言语法 – 语法解析规则、关键字、语句、声明、运算符等。
 * 类型 – 布尔型、数字、字符串、对象等。
@@ -45,6 +39,41 @@ Joe
 
 ## ECMAScript & Javascript
 * ECMAScript：JavaScript，JScript，ActionScript
-
-
 * JavaScript：ECMAScript，DOM和BOM
+
+## 模板字符串
+```
+console.log(`I'm a "String"`);
+I'm a "String"
+```
+```
+function authorize(user, action) {
+    if (!user.hasPrivilege(action)) {
+    throw new Error(
+    `用户 ${user.name} 未被授权执行 ${action} 操作。`);
+    }
+}
+```
+```
+$(“#wumai").html(`
+西安雾霾
+遛狗不见狗，狗绳提在手，
+见绳不见手，狗叫我才走。
+`);
+```
+
+
+
+## const，let
+```
+const DELAY = 1000;
+
+let count = 0;
+count = count + 1;
+```
+放弃var
+块级作用域。
+
+
+
+## for循环
