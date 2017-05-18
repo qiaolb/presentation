@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>时间简史</title>
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/css/reveal.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/css/theme/black.min.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/reveal.js/3.3.0/lib/css/zenburn.min.css">
+
+    <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="custom.css">-->
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '//cdn.bootcss.com/reveal.js/3.3.0/css/print/pdf.min.css' : '//cdn.bootcss.com/reveal.js/3.3.0/css/print/paper.min.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lte IE 9]>
+    <script src="//cdn.bootcss.com/reveal.js/3.3.0/lib/js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-markdown="brief-history-time.md"
+                 data-separator="^\n\n\n"
+                 data-separator-vertical="^\n\n"
+                 data-separator-notes="^Note:">
+        </section>
+        <section>
+            <h1>THANKS!</h1>
+            <div>
+                <div>
+                    <a href="https://github.com/qiaolb">
+                <span>
+                    <i class="fa fa-github" aria-hidden="true"></i> qiaolb
+                </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/qiaolibo">
+                <span>
+                    <i class="fa fa-twitter" aria-hidden="true"></i> @qiaolibo
+                </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://weibo.com/qiaolibo">
+                <span>
+                    <i class="fa fa-weibo" aria-hidden="true"></i> @qiaolibo
+                </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="//cdn.bootcss.com/reveal.js/3.3.0/lib/js/head.min.js"></script>
+<script src="//cdn.bootcss.com/reveal.js/3.3.0/js/reveal.min.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/markdown/marked.min.js'},
+            {src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/markdown/markdown.min.js'},
+            {src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/notes/notes.min.js', async: true},
+            {
+                src: '//cdn.bootcss.com/reveal.js/3.3.0/plugin/highlight/highlight.min.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
